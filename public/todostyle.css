@@ -1,23 +1,79 @@
+.navi{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(42, 41, 46);
+    position: fixed;
+}
+#navitems{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+}
+#icon{
+    width: 70%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 20px;
+}
 h1{
-    color: #F9DBBA;
+    color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  ;
-    font-size: 65px;
+    font-size: 85px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+h6{
+
+    font-size: medium;
+    font-weight: lighter;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin:0px;
+    color: black;
+
 }
 body{
     background-color: rgb(42, 41, 46);
+    margin: 0;
 }
 .ListBody{
     display: flex;
+    padding-inline: 50px;
     flex-direction: column;
     align-items: center;
-    width: 40%;
-    background:linear-gradient(#5B99C2, transparent);
-    background-color: #1A4870;
-    height: 250px;
+    width: 100%;
+    padding: 0%;
+    background:linear-gradient(to right, #3172AA, transparent);
+    background-color: #5CABF0;
+    height: 450px;
     border-radius: 0px;
-    margin:auto;
-    color: #F9DBBA ;
+    color: white ;
+}
+.editListBody{
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0%;
     
+    border-radius: 0px;
+    color: white ;
+}
+.editListBody input{
+    background-color: #5CABF0;
+}
+.myForm{
+
+    margin: auto;
+    margin-top: 40px;
 }
 .list-container{
     margin-top: 50px;
@@ -29,54 +85,70 @@ body{
     position: relative;
     top: 50px;
 }
-.list-container ul{
-    width: 70%;
-    height:auto;
-    min-height: 0px;
-    align-self: center;
-    align-items: center;
-    padding:0px 0px;
-    
-    border-radius: 0px;
-    margin: auto;
-
-    background-color: #5B99C2;
-
+#todoContainer{
+    display: flex;
 }
-
-.list-container li{
+p{
+    display: inline;
+    align-items: start;
+    color: black;
+}
+.todoItem{
     text-align: center;
     font-size: x-large;
-    width: 100%;
+    font-weight: 300;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: inline-block;
+    background-color: #6AB4F3;
+    width: 40%;
     min-height: 0;
-    color: #F9DBBA;
+    color: white;
     list-style: none;
     font-family:Arial, Helvetica, sans-serif;
-    margin:auto;
     word-wrap: break-word;
-    padding-top:25px;
-    padding-bottom: 25px;
-    padding-right: 5px;
-    padding-left: 5px;
-    transition: 800ms ease;
-    border-bottom:1px solid black;
+    margin-left: auto;
+    margin-top: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 0px;
+    padding-left: 0px;
+    border:1px solid white;
+    border-radius: 8px;
     order: -1;
 }
-.list-container li:hover{
-    
-    background-color: #F9DBBA;
-    color: #1A4870;
+.images{
+    width: 30px;
+    height: 66px;
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: 10px;
+}
+.images button{
+    background-color: transparent;
+    border: 0px;
+    display: inline;
+}
+.images img{
+    width: 30px;
+    height: 30px;
+    margin-top: 33px;
 }
 
 
 
+.but:hover{
+    background-color: #5B99C2;
+    color: white;
+}
+
 .but {
-    width: 40px;
+    width: 80px;
     height: 40px;
-    border-radius: 0px;
+    border-radius: 6px;
     display: inline; 
     align-items: center;
-    background-color: #F9DBBA;
+    background-color: white;
     border: none;
     text-align: center;
     margin-left: 8px;
@@ -84,37 +156,113 @@ body{
     outline: none;
 }
 
-.but2{
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    display: inline; 
-    align-items: center;
-    background-color: #F9DBBA;
-    border: none;
-    text-align: center;
-    margin-left: 8px;
-    transition: 1000ms ease-in-out;
-}
-.but2:hover{
-    background-color: rgb(252, 58, 58);
-}
-.but:hover{
-    background-color: #5B99C2;
-    color: #F9DBBA;
-}
+
 .inp{
     display: inline;   
-    border-radius: 0px;
+    border-radius: 6px;
     height: 40px;
+    width: 250px;
+    color: white;
     border: none;
-    background-color: #F9DBBA;
+    background-color: rgb(42, 41, 46);
+    padding-inline: 15px;
 }
 .lest{
     margin-top: 30px;
 }
-.lits{
+.myLink{
+    text-decoration: none;
+    color: white;
+}
+.notfound{
     display: flex;
-    align-items: center;
-    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+} .notfound h1{
+    margin: auto;
+    text-align: center;
+}
+#chev{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+#chev img{
+    width: 30px;
+    height: 30px;
+}
+@media(max-width: 600px){
+    h1{
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  ;
+        font-size: 55px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    h6{
+        font-size: small;
+    }
+    .ListBody{
+        display: flex;
+        padding-inline: 50px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0%;
+        background:linear-gradient(to right, #3172AA, transparent);
+        background-color: #5CABF0;
+        height: 450px;
+        border-radius: 0px;
+        color: white ;
+    }
+    .editListBody{
+        display: flex;
+    
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0%;
+        
+        border-radius: 0px;
+        color: white ;
+    }
+    .editListBody input{
+        background-color: #5CABF0;
+    }
+    .but {
+        width: 80px;
+        height: 40px;
+        border-radius: 6px;
+        display: block; 
+        align-items: center;
+        background-color: white;
+        border: none;
+        text-align: center;
+        margin-left: 10px;
+        margin-top: 10px;
+        transition: 100ms ease-in-out;
+        outline: none;
+    }
+    #navitems{
+        display: none;
+    }
+    #chev{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        margin-left: 60px ;
+    } .dropProfile{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 30px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        width: 20vh;
+        background: rgb(42, 41, 46);
+        position: absolute;
+        top:70px;
+        left: 420px;
+    }
 }
