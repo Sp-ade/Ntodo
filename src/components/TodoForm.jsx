@@ -39,7 +39,7 @@ const handleSubmit = e => {
     <button className="but" id='butid' type='submit'>
       Add
       </button>
-    </form><ToastContainer/></div>
+    </form><ToastContainer/> </div>
     
   )
 }

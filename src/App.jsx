@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route } from "react-router-dom";
 import MainLayout from "./Layouts/MainLayout";
 import PageNotFound from "./Pages/PageNotFound";
+import BinPage from "./Pages/BinPage";
 
 function App() {
   const router = createBrowserRouter(
